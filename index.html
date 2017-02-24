@@ -9,292 +9,35 @@
         <link rel="icon" href="icon/new_hope_icon_30x30.png">
         <link rel="stylesheet" type="text/css" href="css/bootstrap4.css">
         <link rel="stylesheet" type="text/css" href="css/bootstrap3.css">
-        <style>
-            @font-face {
-                font-family: "Ubuntu";
-                font-style: normal;
-                font-weight: 400;
-                src: url('./fonts/ubuntu-font-family/Ubuntu-R.ttf');
-            }
-            body {
-                font-family: Ubuntu, "Microsoft YaHei", 微软雅黑, "MicrosoftJhengHei", 华文细黑, STHeiti, MingLiu;
-            }
-            image {
-                width: 100%;
-                height: 100%;
-            }
-            a:link, a:visited, a:hover, a:active {
-                color: black;
-                text-decoration: none;
-            }
-            .text-center {
-                text-align: center;
-            }
-            .padding-top-5 {
-                padding-top: 5px;
-            }
-            .head {
-                padding-left: 10px;
-                padding-right: 10px;
-            }
-            .slogan-logo {
-                padding-top: 5px;
-                padding-bottom: 5px;
-            }
-            .slogan-logo img {
-                width: auto;
-                height: auto;
-                width: 80%;
-            }
-            .nav {
-                border: 1px solid #e7e7e7;
-                border-radius: 4px;
-                background-color: #f8f8f8;
-                margin-left: 1px;
-                margin-right: 1px;
-                margin-bottom: 1px;
-            }
-			.nav ul {
-			    list-style-type: none;
-			    margin: 0;
-			    padding: 0;
-			    overflow: hidden;
-			    background-color: #f8f8f8;
-			}
-			.nav li {
-			    float: left;
-			}
-            .nav li a, .dropbtn {
-                display: inline-block;
-                color: gray;
-                text-align: center;
-                padding: 12px 10px;
-                text-decoration: none;
-            }
-			.nav li a:hover:not(.active) {
-                color: rgba(0, 0, 0, 0.8);
-			}
-			.nav .active {
-                color: black;
-			}
-            .nav li.my-dropdown {
-                display: inline-block;
-            }
-            .nav .dropdown-content {
-                border: 1px solid lightgray;
-                display: none;
-                position: absolute;
-                background-color: white;
-                min-width: 160px;
-                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-                z-index: 1;
-            }
-            .nav .dropdown-content a {
-                color: gray;
-                padding: 12px 16px;
-                text-decoration: none;
-                display: block;
-                text-align: left;
-            }
-            .nav .my-dropdown:hover .dropdown-content {
-                display: block;
-            }
-            .carousel-inner img {
-                z-index: -1;
-            }
-            .carousel-inner .face {
-                width: 100%;
-                height: 100px;
-                position: absolute;
-                left: 0px;
-                top: 0px;
-            }
-            .carousel-inner .desc-background {
-                border-radius: 10px;
-                opacity: 0.67;
-                background: black;
-                position: absolute;
-            }
-            .carousel-inner .desc {
-                padding: 15px;
-                text-align: center;
-                opacity: 1;
-                font-size: large;
-            }
-			img[src$="leaf-256.png"] {
-                width: 20px;
-                height: 20px;
-                position: relative;
-				top: -9px;
-				opacity: 0.75;
-				z-index: 1;
-                animation: activities-animation-1 200s infinite;
-                -webkit-animation: activities-animation-1 200s infinite;
-                -moz-animation: activities-animation-1 200s infinite;
-                -o-animation: activities-animation-1 200s infinite;
-            }   
-            @keyframes activities-animation-1 {
-                0% {transform: rotate(0deg); left: -150px;}
-                1% {transform: rotate(370deg); left: 4px;}
-                99% {transform: rotate(370deg); left: 4px%;}
-            }   
-            @-webkit-keyframes activities-animation-1 {
-                0% {-webkit-transform: rotate(0deg); left: -50px;}
-                1% {-webkit-transform: rotate(370deg); left: 20%;}
-                99% {-webkit-transform: rotate(370deg); left: 20%;}
-            }
-            @-moz-keyframes activities-animation-1 {
-                0% {-moz-transform: rotate(0deg); left: -50px;}
-                1% {-moz-transform: rotate(370deg); left: 20%;}
-                99% {-moz-transform: rotate(370deg); left: 20%;}
-            }
-            @-o-keyframes activities-animation-1 {
-                0% {transform: rotate(0deg); left: 0;}
-                1% {transform: rotate(370deg); left: 20%;}
-                99% {transform: rotate(370deg); left: 20%;}
-            }
-            .activities {
-                background-color: white;
-            }
-            .latest-products {
-                padding-top: 25px;
-                background-color: #f1f1f1;
-            }
-            .half-rule {
-                width: 100px;
-                margin: 40px auto;
-            }
-            .prospect {
-                padding: 25px;
-            }
-            .prospect img {
-                display: block;
-                margin: 0 auto;
-                width: 50%;
-                height: auto;
-            }
-            .successful-case {
-                padding-top: 25px;
-                background-color: #f1f1f1;
-            }
-            .s-c-photo {
-                white-space: nowrap;
-            }
-            .s-c-photo img {
-                height: 150px;
-            }
-            .case-box {
-                background-color: white;
-                display: inline-block;
-                white-space: nowrap;
-                margin: 5px; 
-                border: 1px solid #ccc;
-            }
-            .box-shadow {
-                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            }
-            .case-box > .desc {
-                text-align: center;
-                padding: 25px 0;
-            }
-            .footer {
-                padding-top: 50px;
-                padding-bottom: 30px;
-                text-align: center;
-                background-color: #2a2730;
-				font-size: 15px;
-            }
-            .footer .content {
-                padding-left: 5%;
-            }
-            .footer-logo {
-                height: 75%;
-                width: 75%;
-            }
-			.footer .copyright {
-				color: gray;
-			}
-			.footer a {
-				color: #f1f1f1;
-			}
-            @media only screen and (min-width: 500px) {
-                .slogan-logo img {
-                    width: 70%;
-                }
-                .carousel-inner .desc {
-                    padding: 13px;
-                    font-size: x-large;
-                }
-                .footer-logo {
-                    height: 67%;
-                    width: 67%;
-                }
-            }
-            @media only screen and (min-width: 650px) {
-                .slogan-logo img {
-                    width: 60%;
-                }
-                .carousel-inner .desc {
-                    padding: 15px;
-                    font-size: xx-large;
-                }
-                .footer-logo {
-                    height: 60%;
-                    width: 60%;
-                }
-            }
-            @media only screen and (min-width: 800px) {
-                .slogan-logo img {
-                    width: 50%;
-                }
-                .carousel-inner .desc {
-                    padding: 18px;
-                    font-size: xx-large;
-                }
-				.footer {
-					text-align: left;
-					padding-left: 5%
-				}
-                .footer-logo {
-                    height: 40%;
-                    width: 40%;
-                }
-            }
-        </style>
+        <link rel="stylesheet" type="text/css" href="css/mystyle.css">
         <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
         <script type="text/javascript" src="js/bootstrap4.js"></script>
         <script type="text/javascript" src="js/bootstrap3.js"></script>
-        <script type="text/javascript">
-            $(document).ready(function() {
-                height_r1 = $(".row1").height();
-                document.getElementById("c-b1").style.height = height_r1 + 20 + "px";
-                document.getElementById("c-b2").style.height = height_r1 + 45 + "px";
-            });
-        </script>
+        <script type="text/javascript" src="js/myjs.js"></script>
     </head>
     <body>
         <div class="slogan-logo" style="text-align:center;">
             <img alt="New Hope Big Logo" src="logo/New_Hope_Logo_Big.png"/>
-		</div>
+        </div>
         <div class="nav">
-			<ul>
-				<li><a class="active" href="#home" style="padding-left: 23px;">主页</a></li>
-				<li><a href="product/index.html">产品</a></li>
-				<li class="my-dropdown">
+            <ul>
+                <li><a class="active" href="#home" style="padding-left: 23px;">主页</a></li>
+                <li><a href="product/index.html">产品</a></li>
+                <li class="my-dropdown">
                     <a href="#" class="dropbtn dropdown-toggle">服务<span class="caret"></span></a>
                     <div class="dropdown-content">
-                      <a href="./service/water_treatment.html">水处理</a>
-                      <a href="./service/foam_control/html">泡沫控制</a>
-                      <a href="./service/microbe_control.html">微生物控制</a>
-                      <a href="./service/cleaning.html">清洁清洗</a>
-                      <a href="./service/gas_control.html">气体控制</a>
+                        <a href="./service/water_treatment.html">水处理</a>
+                        <a href="./service/foam_control/html">泡沫控制</a>
+                        <a href="./service/microbe_control.html">微生物控制</a>
+                        <a href="./service/cleaning.html">清洁清洗</a>
+                        <a href="./service/gas_control.html">气体控制</a>
                     </div>
                 </li>	
-				<li><a href="news.html">行业动态</a></li>
-				<li><a href="documents.html">文献</a></li>
-				<li><a href="contacts.html">联系方式</a></li>
-			</ul>
-		</div>
+                <li><a href="news.html">行业动态</a></li>
+                <li><a href="documents.html">文献</a></li>
+                <li><a href="contacts.html">联系方式</a></li>
+            </ul>
+        </div>
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
@@ -307,8 +50,7 @@
                 <div class="item active">
                     <img src="pictures/carousel_slide/1.jpg" alt="First Slide">
                     <div class="face">
-                        <div class="desc-background" style="background: white; top: 10%; right:
-                            10%;">
+                        <div class="desc-background" style="background: white; right: 10%;">
                             <div  class="desc">优质品牌：<br>Goldwell<br>Goldmater<br>点石安达</div>
                         </div>
                     </div>
@@ -316,7 +58,7 @@
                 <div class="item">
                     <img src="pictures/carousel_slide/2.jpg" alt="Second Slide">
                     <div class="face">
-                        <div class="desc-background" style="background: white; top: 10%; left: 15%;">
+                        <div class="desc-background" style="background: white; left: 15%;">
                             <div class="desc" style="color:
                             black;">从始至终走绿色，科技，安全<br>的发展之路，一直致力于环境<br>保护和科技的相关领域。</div>
                         </div>
@@ -325,8 +67,7 @@
                 <div class="item">
                     <img src="pictures/carousel_slide/3.jpg" alt="Third Slide">
                     <div class="face">
-                        <div class="desc-background" style="background: black;
-                            top: 10%; right: 10%;">
+                        <div class="desc-background" style="background: black; right: 10%;">
                             <div class="desc" style="color:
                             white">科研单位的加入 &nbsp;
                             客户的认可<br>知名供应商支持 &nbsp; 高效的管理
@@ -335,7 +76,6 @@
                     </div>
                 </div>
             </div>
-
             <!-- Controls -->
             <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
                 <span class="glyphicon glyphicon carousel-control-prev-icon" aria-hidden="true"></span>
@@ -354,7 +94,7 @@
             <div class="card-block" id="c-b1" style="height:500px;overflow-y:scroll;">
                 <div class="container-fluid">
                     <div class="row">
-                        <a href="" class="row1 col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                        <a href="" class="row1 col-xs-6 col-sm-6 col-md-4 col-lg-3">
                             <div class="card card- h-100">
                                 <div class="card-header"><h5 class="card-title">新的工厂将在密歇根投入试验性污水处理</h5>
                                 </div>
@@ -365,7 +105,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="" class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                        <a href="" class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
                             <div class="card card- h-100">
                                 <div class="card-header"><h5 class="card-title">新泽西污水处理中心更新完毕，将有更大的吞吐量</h5>
                                 </div>
@@ -373,7 +113,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="" class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                        <a href="" class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
                             <div class="card card- h-100">
                                 <div class="card-header"><h5 class="card-title">Green Bay N9加大生产，而且在下一年降价</h5>
                                 </div>
@@ -381,7 +121,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="" class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                        <a href="" class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
                             <div class="card card- h-100">
                                 <div class="card-header"><h5 class="card-title">经典产品Shadow K-238将在明年第二季度开始停产</h5>
                                 </div>
@@ -389,7 +129,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="" class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                        <a href="" class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
                             <div class="card card- h-100">
                                 <div class="card-header"><h5 class="card-title">第4届全球污水处理大会在旧金山顺利举行</h5>
                                 </div>
@@ -397,7 +137,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a href=""  class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                        <a href=""  class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
                             <div class="card card- h-100">
                                 <div class="card-header"><h5 class="card-title">第11届欧洲环境保护产品博览会在阿姆斯特丹举行</h5>
                                 </div>
@@ -405,7 +145,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="" class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                        <a href="" class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
                             <div class="card card- h-100">
                                 <div class="card-header"><h5 class="card-title">2014年10月新泽西污水处理超标案，公司被判无罪</h5>
                                 </div>
@@ -419,14 +159,14 @@
         </div>
         <div class="break" style="background-color: white; height:30px;"></div>
         <div class="latest-products">
-			<br>
-			<h2 class="head text-center">坚持推陈出新，是公司继续发展的原动力</h2>
+            <br>
+            <h2 class="head text-center">坚持推陈出新，是公司继续发展的原动力</h2>
             <h5 class="text-center padding-top-5">我们的最新产品</h5>
             <hr class="half-rule">
             <div class="card-block" id="c-b2" style="height:500px;overflow-y:scroll;">
                 <div class="container-fluid">
                     <div class="row">
-                        <a href="" class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                        <a href="" class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
                             <div class="card card- h-100">
                                 <div class="card-header">
                                     <h5 class="card-title">食品废水处理设备<br>FoodCleanerA5</h5>
@@ -437,7 +177,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="" class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                        <a href="" class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
                             <div class="card card- h-100">
                                 <div class="card-header">
                                     <h5 class="card-title">微生物控制的处理<br>Anno Sano</h5>
@@ -447,7 +187,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="" class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                        <a href="" class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
                             <div class="card card- h-100">
                                 <div class="card-header">
                                     <h5 class="card-title">铝制品电解氧化废水处理<br>SuperCleaner 2</h5>
@@ -458,7 +198,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="" class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                        <a href="" class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
                             <div class="card card- h-100">
                                 <div class="card-header">
                                     <h5 class="card-title">污水恶臭气体处理设备<br>CoolestMan F251</h5>
@@ -470,7 +210,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="" class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                        <a href="" class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
                             <div class="card card- h-100">
                                 <div class="card-header">
                                     <h5 class="card-title">一体化化妆品污水处理<br>Suruke O3</h5>
@@ -481,7 +221,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="" class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                        <a href="" class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
                             <div class="card card- h-100">
                                 <div class="card-header">
                                     <h5 class="card-title">中和絮凝沉淀排泥一体化<br>Nakki K721</h5>
@@ -491,7 +231,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="" class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                        <a href="" class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
                             <div class="card card- h-100">
                                 <div class="card-header">
                                     <h5 class="card-title">高能离子废气净化器<br>Power K5</h5>
@@ -502,7 +242,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="" class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                        <a href="" class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
                             <div class="card card- h-100">
                                 <div class="card-header"><h5
                                      class="card-title">印移印洗版钢结构一体化<br>CC253</h5>
@@ -545,67 +285,69 @@
         </div>
         <div class="break" style="background-color: white; height:30px;"></div>
         <div class="successful-case">
-			<br>
+            <br>
             <h2 class="head text-center">多少次的案例证明，选择我们一定是对的！</h2>
             <h5 class="head text-center
-                padding-top-5">20多年来行业声誉是日积月累的经验的最好见证，一切都看得到也听得到</h5>
+            padding-top-5">20多年来行业声誉是日积月累的经验的最好见证，一切都看得到也听得到</h5>
             <hr class="half-rule">
-            <marquee class="s-c-photo" behavior="alternate">
-            <div class="case-box">
-                <a target="" href="./pictures/successful_case/1.jpg">
-                    <img src="./pictures/successful_case/1.jpg">
-                </a>
-                <div class="desc">深圳南山区华侨城水浸问题</div>
+            <div class="marquee">
+				<div class="case-boxes">
+                <div class="case-box">
+                    <a target="" href="./pictures/successful_case/1.jpg">
+                        <img src="./pictures/successful_case/1.jpg">
+                    </a>
+                    <div class="desc">深圳南山区华侨城水浸问题</div>
+                </div>
+                <div class="case-box">
+                    <a target="" href="./pictures/successful_case/2.jpg">
+                        <img src="./pictures/successful_case/2.jpg">
+                    </a>
+                    <div class="desc">Navenen石材项目</div>
+                </div>
+                <div class="case-box">
+                    <a target="" href="./pictures/successful_case/3.jpg">
+                        <img src="./pictures/successful_case/3.jpg">
+                    </a>
+                    <div class="desc">广州番禺大学城项目</div>
+                </div>
+                <div class="case-box">
+                    <a target="" href="./pictures/successful_case/4.jpg">
+                        <img src="./pictures/successful_case/4.jpg">
+                    </a>
+                    <div class="desc">纽约长岛南部水污染处理</div>
+                </div>
+                <div class="case-box">
+                    <a target="" href="./pictures/successful_case/5.jpg">
+                        <img src="./pictures/successful_case/5.jpg">
+                    </a>
+                    <div class="desc">Kacca Vooce石材项目</div>
+                </div>
+                <div class="case-box">
+                    <a target="" href="./pictures/successful_case/6.jpg">
+                        <img src="./pictures/successful_case/6.jpg">
+                    </a>
+                    <div class="desc">深圳岗厦地下水排放问题</div>
+                </div>
+                <div class="case-box">
+                    <a target="" href="./pictures/successful_case/7.jpg">
+                        <img src="./pictures/successful_case/7.jpg">
+                    </a>
+                    <div class="desc">波士顿常春藤周围污水处理</div>
+                </div>
+                <div class="case-box">
+                    <a target="" href="./pictures/successful_case/8.jpg">
+                        <img src="./pictures/successful_case/8.jpg">
+                    </a>
+                    <div class="desc">北京王府井地区污水处理</div>
+                </div>
+                <div class="case-box">
+                    <a target="" href="./pictures/successful_case/9.jpg">
+                        <img src="./pictures/successful_case/9.jpg">
+                    </a>
+                    <div class="desc">深圳白石州生活污水处理</div>
+                </div>
+				</div>
             </div>
-            <div class="case-box">
-                <a target="" href="./pictures/successful_case/2.jpg">
-                    <img src="./pictures/successful_case/2.jpg">
-                </a>
-                <div class="desc">Navenen石材项目</div>
-            </div>
-            <div class="case-box">
-                <a target="" href="./pictures/successful_case/3.jpg">
-                    <img src="./pictures/successful_case/3.jpg">
-                </a>
-                <div class="desc">广州番禺大学城项目</div>
-            </div>
-            <div class="case-box">
-                <a target="" href="./pictures/successful_case/4.jpg">
-                    <img src="./pictures/successful_case/4.jpg">
-                </a>
-                <div class="desc">纽约长岛南部水污染处理</div>
-            </div>
-            <div class="case-box">
-                <a target="" href="./pictures/successful_case/5.jpg">
-                    <img src="./pictures/successful_case/5.jpg">
-                </a>
-                <div class="desc">Kacca Vooce石材项目</div>
-            </div>
-            <div class="case-box">
-                <a target="" href="./pictures/successful_case/6.jpg">
-                    <img src="./pictures/successful_case/6.jpg">
-                </a>
-                <div class="desc">深圳岗厦地下水排放问题</div>
-            </div>
-            <div class="case-box">
-                <a target="" href="./pictures/successful_case/7.jpg">
-                    TE<img src="./pictures/successful_case/7.jpg">
-                </a>
-                <div class="desc">波士顿常春藤周围污水处理</div>
-            </div>
-            <div class="case-box">
-                <a target="" href="./pictures/successful_case/8.jpg">
-                    <img src="./pictures/successful_case/8.jpg">
-                </a>
-                <div class="desc">北京王府井地区污水处理</div>
-            </div>
-            <div class="case-box">
-                <a target="" href="./pictures/successful_case/9.jpg">
-                    <img src="./pictures/successful_case/9.jpg">
-                </a>
-                <div class="desc">深圳白石州生活污水处理</div>
-            </div>
-            </marquee>
         </div>
         <div class="break" style="background-color: #f1f1f1; height:30px;"></div>
         <div class="navbar navbar-default footer">
@@ -622,8 +364,8 @@
                 <div style="width: 33.33%; float: left; text-align: left;">
                     <a href="tel:+8602012345678">+86 (020) 12345678</a><br>
                     <a href="mailto:vc93@icloud.com?Subject=Hellow%20again" target="_top">vc93@icloud.com</a><br>
-                   <a href="privacyPolicy.html">隐私政策</a><br>
-                   <a href="itemofuse.html">使用条款</a>
+                    <a href="privacyPolicy.html">隐私政策</a><br>
+                    <a href="itemofuse.html">使用条款</a>
                 </div>
             </div><br>
             <p class="copyright">Designed and built with all the love in the world by Victor Chen (<a href="https://twitter.com/vc9308"> github</a> <a href="https://github.com/vc9308">twiiter</a> <a href="https://www.facebook.com/profile.php?id=100008310261533">facebook</a> ). Main blacktained by the core team with the help of our contributors.
