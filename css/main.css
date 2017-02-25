@@ -422,7 +422,7 @@ img[src$="leaf-256.png"] {
         display: inline-block;
         color: gray;
         text-align: center;
-        padding: 12px 5px;
+        padding: 12px 6px;
         text-decoration: none;
     }
     .footer-logo {
