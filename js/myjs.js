@@ -16,12 +16,12 @@ function change_carousel_picture() {
         $("#carousel-picture-2").attr("src", "pictures/carousel_slide/2-small.jpg");
         $("#carousel-picture-3").attr("src", "pictures/carousel_slide/3-small.jpg");
     }
-    if(totalWidth > 1370) {
+    if(totalWidth < 1370) {
         $("#carousel-picture-1").attr("src", "pictures/carousel_slide/1-middle.jpg");
         $("#carousel-picture-2").attr("src", "pictures/carousel_slide/2-middle.jpg");
         $("#carousel-picture-3").attr("src", "pictures/carousel_slide/3-middle.jpg");
     }
-    else if(totalWidth  > 1930) {
+    else if(totalWidth < 1930) {
         $("#carousel-picture-1").attr("src", "pictures/carousel_slide/1-large.jpg");
         $("#carousel-picture-2").attr("src", "pictures/carousel_slide/2-large.jpg");
         $("#carousel-picture-3").attr("src", "pictures/carousel_slide/3-large.jpg");
