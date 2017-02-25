@@ -8,6 +8,108 @@ body {
     font-family: Ubuntu, "Microsoft YaHei", 微软雅黑, "MicrosoftJhengHei", 华文细黑, STHeiti, MingLiu;
 	overflow-x: hidden;
 }
+.carousel-picture {
+    animation: carousel-fade-in 1.5s; 
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+    -webkit-animation: carousel-fade-in 1.5s; 
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-timing-function: ease-in;
+    -moz-animation: carousel-fade-in 1.5s; 
+    -moz-animation-fill-mode: forwards;
+    -moz-animation-timing-function: ease-in;
+    -o-animation: carousel-fade-in 1.5s; 
+    -o-animation-fill-mode: forwards;
+    -o-animation-timing-function: ease-in;
+}
+.fade-in-1500ms {
+    animation: fade-in 1.5s; 
+    animation-fill-mode: forwards;
+    -webkit-animation: fade-in 1.5s; 
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation: fade-in 1.5s; 
+    -moz-animation-fill-mode: forwards;
+    -o-animation: fade-in 1.5s; 
+    -o-animation-fill-mode: forwards;
+}
+.fade-in-1500ms-067 {
+    animation: fade-in-067 1.5s; 
+    animation-fill-mode: forwards;
+    -webkit-animation: fade-in-067 1.5s; 
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation: fade-in-067 1.5s; 
+    -moz-animation-fill-mode: forwards;
+    -o-animation: fade-in-067 1.5s; 
+    -o-animation-fill-mode: forwards;
+}
+.fade-in-2s{
+    animation: fade-in 2s; 
+    animation-fill-mode: forwards;
+    -webkit-animation: fade-in 2s; 
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation: fade-in 2s; 
+    -moz-animation-fill-mode: forwards;
+    -o-animation: fade-in 2s; 
+    -o-animation-fill-mode: forwards;
+}
+.fade-in-3s, .card-block, .row  {
+    animation: fade-in 3s; 
+    animation-fill-mode: forwards;
+    -webkit-animation: fade-in 3s; 
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation: fade-in 3s; 
+    -moz-animation-fill-mode: forwards;
+    -o-animation: fade-in 3s; 
+    -o-animation-fill-mode: forwards;
+}
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@-webkit-keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@-moz-keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@-o-keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes fade-in-067 {
+    from { opacity: 0; }
+    to { opacity: 0.67; }
+}
+@-webkit-keyframes fade-in-067 {
+    from { opacity: 0; }
+    to { opacity: 0.67; }
+}
+@-moz-keyframes fade-in-067 {
+    from { opacity: 0; }
+    to { opacity: 0.67; }
+}
+@-o-keyframes fade-in-067 {
+    from { opacity: 0; }
+    to { opacity: 0.67; }
+}
+@keyframes carousel-fade-in {
+    from { opacity: 0.20; }
+    to { opacity: 1; }
+}
+@-webkit-keyframes carousel-fade-in {
+    from { opacity: 0.20; }
+    to { opacity: 1; }
+}
+@-moz-keyframes carousel-fade-in {
+    from { opacity: 0.20; }
+    to { opacity: 1; }
+}
+@-o-keyframes carousel-fade-in {
+    from { opacity: 0.20; }
+    to { opacity: 1; }
+}
 image {
     width: 100%;
     height: 100%;
@@ -167,7 +269,7 @@ img[src$="leaf-256.png"] {
     width: 50%;
     height: auto;
 }
-.successful-case {
+.successful-cases {
     padding-top: 25px;
     background-color: #f1f1f1;
 }
