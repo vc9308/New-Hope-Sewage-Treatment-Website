@@ -39,7 +39,7 @@ $(".activities").on("tap", "taphold", function() {
 
 function jump_to_latest_products() {
     window.location.href="#latest-products";
-});
+};
 
 $(".marquee").on("tap", "taphold", function() {
 	$(".marquee").addClass("marquee-boxes-animation-when-tap");
