@@ -33,8 +33,15 @@ function change_carousel_picture() {
     }
 }
 
-$(".activities").on("tap", "taphold", function() {
+$("img").click = function() {
+};
+
+function test() {
     $(".activities2next").css("display", "block");
+}
+
+$(".activities").on("tap", "taphold", function() {
+    test();
 });
 
 function jump_to_latest_products() {
