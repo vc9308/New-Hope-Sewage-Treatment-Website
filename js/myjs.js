@@ -32,3 +32,7 @@ function change_carousel_picture() {
         $("#carousel-picture-3").attr("src", "pictures/carousel_slide/3-original.jpg");
     }
 }
+$(".marquee").on("tap", "taphold", function() {
+	$(".marquee").addClass("marquee-boxes-animation-when-tap");
+    $(".marquee").addClass("marquee-box-animation-when-tap");
+});

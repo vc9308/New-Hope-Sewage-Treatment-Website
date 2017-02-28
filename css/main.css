@@ -312,6 +312,22 @@ img[src$="leaf-256.png"] {
     -o-animation: scale5p 1s;
     -o-animation-fill-mode: forwards;
 } 
+.marquee-boxes-animation-when-tap {
+	animation-play-state: paused; 
+    -webkit-animation-play-state: paused;
+	-moz-animation-play-state: paused; 
+	-o-animation-play-state: paused; 
+}
+.marquee-box-animation-when-tap {
+    animation: scale5p 1s;
+    animation-fill-mode: forwards;
+    -webkit-animation: scale5p 1s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation: scale5p 1s;
+    -moz-animation-fill-mode: forwards;
+    -o-animation: scale5p 1s;
+    -o-animation-fill-mode: forwards;
+}
 @keyframes scroll-left {
     from   { left: 0px; }
     to { left: -857px; }
