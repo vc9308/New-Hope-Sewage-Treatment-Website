@@ -8,6 +8,10 @@ body {
     font-family: Ubuntu, "Microsoft YaHei", 微软雅黑, "MicrosoftJhengHei", 华文细黑, STHeiti, MingLiu;
 	overflow-x: hidden;
 }
+header, section, footer, aside, nav, main, article, figure {
+    display: block;
+}
+
 .carousel-picture {
     animation: carousel-fade-in 1.5s; 
     animation-fill-mode: forwards;
@@ -148,11 +152,10 @@ a:link, a:visited, a:hover, a:active {
 .nav ul {
     list-style-type: none;
     margin: 0;
+    margin-left: -15px;
     padding: 0;
     overflow: hidden;
     background-color: #f8f8f8;
-    position: relative;
-    left: -18px;
 }
 .nav li {
     float: left;
@@ -161,13 +164,13 @@ a:link, a:visited, a:hover, a:active {
     display: inline-block;
     color: gray;
     text-align: center;
-    padding: 12px 3px;
+    padding: 12px 5px;
     text-decoration: none;
 }
 .nav li a:hover:not(.active) {
     color: rgba(0, 0, 0, 0.8);
 }
-.nav .home {
+.nav .active {
     color: black;
 }
 .nav li.my-dropdown {
@@ -398,6 +401,14 @@ img[src$="leaf-256.png"] {
 .footer a {
     color: #f1f1f1;
 }
+@media only screen and (min-width: 400px) {
+    .nav ul {
+        margin-left: 0px;
+    }
+    .nav li a, .dropbtn {
+        padding: 12px 10px;
+    }
+}
 @media only screen and (min-width: 500px) {
     .slogan-logo img {
         width: 75%;
@@ -408,22 +419,6 @@ img[src$="leaf-256.png"] {
     .carousel-inner .desc {
         padding: 13px;
         font-size: large;
-    }
-    .nav ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: #f8f8f8;
-        position: relative;
-        left: 0px;
-    }
-    .nav li a, .dropbtn {
-        display: inline-block;
-        color: gray;
-        text-align: center;
-        padding: 12px 6px;
-        text-decoration: none;
     }
     .footer-logo {
         height: 67%;
