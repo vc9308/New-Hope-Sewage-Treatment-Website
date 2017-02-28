@@ -32,6 +32,15 @@ function change_carousel_picture() {
         $("#carousel-picture-3").attr("src", "pictures/carousel_slide/3-original.jpg");
     }
 }
+
+$(".activities").on("tap", "taphold", function() {
+    $(".activities2next").css("display", "block");
+});
+
+function jump_to_latest_products() {
+    window.location.href="#latest-products";
+});
+
 $(".marquee").on("tap", "taphold", function() {
 	$(".marquee").addClass("marquee-boxes-animation-when-tap");
     $(".marquee").addClass("marquee-box-animation-when-tap");

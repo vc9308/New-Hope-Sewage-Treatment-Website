@@ -583,3 +583,17 @@ img[src$="leaf-256.png"] {
         width: 19%;
     }
 }
+.activities2next {
+    display: none;
+    text-align: center;
+    padding: 2px;
+    width: 55px;
+    height: 28px;
+    background-color: #87cefa;
+    border-radius: 4px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    opacity: 0.5;
+    z-index: 2;
+}
