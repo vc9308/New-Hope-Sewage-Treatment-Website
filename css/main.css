@@ -584,7 +584,7 @@ img[src$="leaf-256.png"] {
     }
 }
 .activities2next {
-    display: none;
+    display: block;
     text-align: center;
     padding: 2px;
     width: 55px;
