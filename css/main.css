@@ -389,7 +389,7 @@ img[src$="leaf-256.png"] {
     font-size: 15px;
 }
 .footer .content {
-    padding-left: 5%;
+    margin-left: -50px;
 }
 .footer-logo {
     height: 75%;
@@ -408,6 +408,9 @@ img[src$="leaf-256.png"] {
     .nav li a, .dropbtn {
         padding: 12px 10px;
     }
+    .footer .content {
+        margin-left: -20px;
+    }
 }
 @media only screen and (min-width: 500px) {
     .slogan-logo img {
@@ -419,6 +422,9 @@ img[src$="leaf-256.png"] {
     .carousel-inner .desc {
         padding: 13px;
         font-size: large;
+    }
+    .footer .content {
+        margin-left: 0px;
     }
     .footer-logo {
         height: 67%;
@@ -436,6 +442,12 @@ img[src$="leaf-256.png"] {
         padding: 15px;
         font-size: x-large;
     }
+    .footer .content {
+        margin-left: 100px;
+    }
+    .footer .content {
+        margin-left: 20px;
+    }
     .footer-logo {
         height: 60%;
         width: 60%;
@@ -452,9 +464,8 @@ img[src$="leaf-256.png"] {
         padding: 18px;
         font-size: xx-large;
     }
-    .footer {
-        text-align: left;
-        padding-left: 5%
+    .footer .content {
+        margin-left: 40px;
     }
     .footer-logo {
         height: 40%;
@@ -472,9 +483,8 @@ img[src$="leaf-256.png"] {
         padding: 21px;
         font-size: 30px;
     }
-    .footer {
-        text-align: left;
-        padding-left: 5%
+    .footer .content {
+        margin-left: 60px;
     }
     .footer-logo {
         height: 40%;
@@ -492,9 +502,8 @@ img[src$="leaf-256.png"] {
         padding: 24px;
         font-size: 35px;
     }
-    .footer {
-        text-align: left;
-        padding-left: 5%
+    .footer .content {
+        margin-left: 80px;
     }
     .footer-logo {
         height: 40%;
@@ -512,9 +521,8 @@ img[src$="leaf-256.png"] {
         padding: 27px;
         font-size: 40px;
     }
-    .footer {
-        text-align: left;
-        padding-left: 5%
+    .footer .content {
+        margin-left: 100px;
     }
     .footer-logo {
         height: 40%;
@@ -532,9 +540,8 @@ img[src$="leaf-256.png"] {
         padding: 31px;
         font-size: 46px;
     }
-    .footer {
-        text-align: left;
-        padding-left: 5%
+    .footer .content {
+        margin-left: 130px;
     }
     .footer-logo {
         height: 29%;
@@ -552,9 +559,8 @@ img[src$="leaf-256.png"] {
         padding: 35px;
         font-size: 52px;
     }
-    .footer {
-        text-align: left;
-        padding-left: 5%
+    .footer .content {
+        margin-left: 160px;
     }
     .footer-logo {
         height: 19%;
