@@ -18,8 +18,11 @@
 }
 body {
   font-family: "Ubuntu-R", "SimSun";
-  overflow-x: hidden;
   width: 100%;
+}
+/* solve the problem of moblie client  */
+.page-wrapper {
+  overflow-x: hidden;
 }
 h1, h2, h3, h4, h5, h6, .bold {
   font-family: "Ubuntu-B", "Microsoft Yahei Bold";
@@ -157,6 +160,9 @@ a:link, a:visited, a:hover, a:active {
   height: auto;
   width: 80%;
 }
+
+/* navbar */
+
 .nav {
   border: 1px solid #e7e7e7;
   border-radius: 4px;
@@ -211,6 +217,9 @@ a:link, a:visited, a:hover, a:active {
 .nav .my-dropdown:hover .dropdown-content {
   display: block;
 }
+
+/* carousel  */
+
 .desc-background {
   top: 5px;
 }
@@ -235,20 +244,41 @@ a:link, a:visited, a:hover, a:active {
   text-align: center;
   opacity: 1;
 }
-img[src$="leaf-256.png"] {
+
+/* activities */
+
+img {
+  width: 100%;
+}
+
+.activities h2 {
+  position: relative;
+  left: -10px;
+}
+
+img[src$="leaf-replacement.png"] {
+  display: block;
+  position: relative;
+  top: -9px;
+  opacity: 0.75;
+  z-index: 2;
+}   
+
+img[src$="leaf.png"] {
+  display: none;
   width: 20px;
   height: 20px;
   position: relative;
   top: -9px;
   opacity: 0.75;
-  z-index: 1;
-  animation: activities-animation-1 2s;
+  z-index: 2;
+  animation: activities-animation-1 3s;
   animation-fill-mode: forwards;
-  -webkit-animation: activities-animation-1 2s;
+  -webkit-animation: activities-animation-1 3s;
   -webkit-animation-fill-mode: forwards;
-  -moz-animation: activities-animation-1 2s;
+  -moz-animation: activities-animation-1 3s;
   -moz-animation-fill-mode: forwards;
-  -o-animation: activities-animation-1 2s;
+  -o-animation: activities-animation-1 3s;
   -o-animation-fill-mode: forwards;
 }   
 @keyframes activities-animation-1 {
@@ -272,15 +302,72 @@ img[src$="leaf-256.png"] {
 }
 .card-title {
   padding-top: 10px;
+  /* Just display 2 lines */
+  overflow: hidden;
+  text-overflow: ellipse;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
 }
+
+/* latest-products */
+
+.latest-products h2 {
+  position: relative;
+  left: 12px;
+}
+
 .latest-products {
   padding-top: 25px;
   background-color: #f1f1f1;
+}
+img[src$="rocket-replacement.png"] {
+  display: block;
+  position: relative;
+  top: -9px;
+  opacity: 0.75;
+  z-index: 2;
+}   
+img[src$="rocket.png"] {
+  display: none;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  top: -9px;
+  opacity: 0.75;
+  z-index: 2;
+  animation: latest-products-animation-1 3s;
+  animation-fill-mode: forwards;
+  -webkit-animation: latest-products-animation-1 3s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation: latest-products-animation-1 3s;
+  -moz-animation-fill-mode: forwards;
+  -o-animation: latest-products-animation-1 3s;
+  -o-animation-fill-mode: forwards;
+}   
+@keyframes latest-products-animation-1 {
+  from { opacity: 0; top: 150px;}
+  to { opacity: 1; top: -8px;}
+}   
+@-webkit-keyframes latest-products-animation-1 {
+  from { opacity: 0; top: 150px;}
+  to { opacity: 1; top: -8px;}
+}
+@-moz-keyframes latest-products-animation-1 {
+  from { opacity: 0; top: 150px;}
+  to { opacity: 1; top: -8px;}
+}
+@-o-keyframes latest-products-animation-1 {
+  from { opacity: 0; top: 150px;}
+  to { opacity: 1; top: -8px;}
 }
 .half-rule {
   width: 100px;
   margin: 40px auto;
 }
+
+/* prospect  */
+
 .prospect {
   padding: 25px;
 }
@@ -293,6 +380,9 @@ img[src$="leaf-256.png"] {
   width: 50%;
   height: auto;
 }
+
+/* successful-cases */
+
 .successful-cases {
   padding-top: 25px;
   background-color: #f1f1f1;
@@ -416,6 +506,9 @@ img[src$="leaf-256.png"] {
   text-align: center;
   padding: 25px 0;
 }
+
+/* footer */
+
 .footer {
   padding-top: 50px;
   padding-bottom: 30px;
@@ -424,11 +517,13 @@ img[src$="leaf-256.png"] {
   font-size: 15px;
 }
 .footer .content {
-  margin-left: -50px;
+  margin-left: -60px;
 }
 .footer-logo {
-  height: 75%;
-  width: 75%;
+  display: none;
+}
+.footer-logo-mobile {
+  display: block;
 }
 .footer .copyright {
   color: gray;
@@ -445,6 +540,12 @@ img[src$="leaf-256.png"] {
   }
   .footer .content {
     margin-left: -20px;
+  }
+  .footer-logo {
+    display: block;
+  }
+  .footer-logo-mobile {
+    display: none;
   }
 }
 @media only screen and (min-width: 500px) {
@@ -476,9 +577,6 @@ img[src$="leaf-256.png"] {
   .carousel-inner .desc {
     padding: 15px;
     font-size: x-large;
-  }
-  .footer .content {
-    margin-left: 100px;
   }
   .footer .content {
     margin-left: 20px;
@@ -603,18 +701,34 @@ img[src$="leaf-256.png"] {
   }
 }
 .activities2next {
-  display: block;
+  display: none;
+  position: fixed;
   text-align: center;
   padding: 2px;
   width: 55px;
   height: 28px;
   background-color: #87cefa;
   border-radius: 4px;
-  position: fixed;
   right: 20px;
   bottom: 20px;
   opacity: 0.5;
-  z-index: 2;
+  cursor: pointer;
+  z-index: 1;
+}
+.latest_products2next {
+  display: none;
+  position: fixed;
+  text-align: center;
+  padding: 2px;
+  width: 55px;
+  height: 28px;
+  background-color: #87cefa;
+  border-radius: 4px;
+  right: 20px;
+  bottom: 20px;
+  opacity: 0.5;
+  cursor: pointer;
+  z-index: 1;
 }
 /* Solve problem display "Loading" 
  * when import Jquery Mobile framwork */

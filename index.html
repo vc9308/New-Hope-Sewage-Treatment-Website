@@ -22,6 +22,7 @@
 </head>
 
 <body>
+<div class="page-wrapper">
   <div class="slogan-logo" style="text-align:center;">
     <img alt="New Hope Big Logo" src="logo/new-hope-logo-original.png"/>
   </div>
@@ -94,7 +95,10 @@
   </div>
   <div class="activities">
     <br /><br />
-    <h2 class="head text-center fade-in-1500ms"><img src="./pictures/animation/leaf-256.png">能提供稳定服务的企业一定生机勃勃</h2>
+    <h2 class="head text-center fade-in-1500ms"><img
+        src="./pictures/animation/leaf.png"><img
+        src="./pictures/animation/leaf-replacement.jpg" width="20"
+        height="20">能提供稳定服务的企业一定生机勃勃</h2>
     <h5 class="text-center padding-top-5 fade-in-1500ms">我们公司的动态</h5>
     <hr class="half-rule">
     <div class="card-block" id="c-b1" style="height:500px;overflow-y:scroll;">
@@ -168,7 +172,11 @@
   <div class="break" style="background-color: white; height:30px;"></div>
   <div id="latest-products" class="latest-products">
     <br />
-    <h2 class="head text-center fade-in-1500ms">坚持推陈出新，是公司继续发展的原动力</h2>
+    <h2 class="head text-center
+    fade-in-1500ms">坚持推陈出新，是公司继续发展的原动力<img
+    src="./pictures/animation/rocket.png"><img
+        src="./pictures/animation/rocket-replacement.jpg" width="24"
+        height="24"></h2>
     <h5 class="text-center padding-top-5 fade-in-1500ms">我们的最新产品</h5>
     <hr class="half-rule">
     <div class="card-block" id="c-b2" style="height:500px;overflow-y:scroll;">
@@ -266,8 +274,9 @@
       </div>
     </div>
   </div>
+  <div class="latest_products2next" onclick="jump_to_prospect()">下部分</div>
   <div class="break" style="background-color: #f1f1f1; height:30px;"></div>
-  <div class="prospect bold">
+  <div class="prospect bold" id="prospect">
     <br />
     <div class="container">
       <h2 class="text-center fade-in-1500ms">为想让城市更美好，乡村更美丽的人们</h2>
@@ -293,14 +302,14 @@
     </div>
   </div>
   <div class="break" style="background-color: white; height:30px;"></div>
-  <div class="successful-casesss bold">
+  <div class="successful-cases bold">
     <br />
     <h2 class="head text-center fade-in-1500ms">多少次的案例证明，选择我们一定是对的！</h2>
     <h5 class="head text-center
     padding-top-5 fade-in-1500ms">20多年来行业声誉是日积月累的经验的最好见证，一切都看得到也听得到</h5>
     <hr class="half-rule">
     <div class="marquee">
-  			<div class="case-boxes">
+  	  <div class="case-boxes">
       <div class="case-box">
         <a target="" href="./pictures/successful_case/1.jpg">
           <img src="./pictures/successful_case/1.jpg">
@@ -311,7 +320,7 @@
         <a target="" href="./pictures/successful_case/2.jpg">
           <img src="./pictures/successful_case/2.jpg">
         </a>
-        <div class="desc">Navenen石材项目</div>
+        <div class="desc">Navenen 石材项目</div>
       </div>
       <div class="case-box">
         <a target="" href="./pictures/successful_case/3.jpg">
@@ -329,7 +338,7 @@
         <a target="" href="./pictures/successful_case/5.jpg">
           <img src="./pictures/successful_case/5.jpg">
         </a>
-        <div class="desc">Kacca Vooce石材项目</div>
+        <div class="desc">Kacca Vooce 石材项目</div>
       </div>
       <div class="case-box">
         <a target="" href="./pictures/successful_case/6.jpg">
@@ -355,16 +364,17 @@
         </a>
         <div class="desc">深圳白石州生活污水处理</div>
       </div>
-  			</div>
+  	  </div>
     </div>
   </div>
-  <div class="break" style="background-color: white; height:30px;"></div>
+  <div class="break" style="background-color: #f1f1f1; height:30px;"></div>
   <div class="navbar navbar-default footer">
     <div class="content fade-in-1500ms">
       <div style="width: 33.33%; float: left;">
         <img class="footer-logo" src="logo/New_Hope_Logo_bandw.png">
       </div>
       <div style="width: 33.33%; float: left; text-align: left;">
+        <img class="footer-logo-mobile" src="logo/New_Hope_Logo_bandw.png">
         <a href="team.html">团队</a><br />
         <a href="sponsor.html">赞助商</a><br />
         <a href="employ.html">加入我们</a><br />
@@ -380,5 +390,6 @@
     <p class="copyright fade-in-1500ms">Designed and built with all the love in the world by Victor Chen (<a href="https://twitter.com/vc9308"> github</a> <a href="https://github.com/vc9308">twiiter</a> <a href="https://www.facebook.com/profile.php?id=100008310261533">facebook</a> ). Main blacktained by the core team with the help of our contributors.
     <br />本项目源码受 MIT开源协议保护，文档受 CC BY 3.0 开源协议保护。</p>
   </div>
+</div>
 </body>
 </html>
