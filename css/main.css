@@ -17,7 +17,7 @@
   src: url('../fonts/Microsoft-Yahei-Bold.ttc') format('truetype');
 }
 body {
-  font-family: "Ubuntu-R", "SimSun";
+  font-family: "Ubuntu-R", "PingFangSC-Regular", "SimSun";
   width: 100%;
 }
 /* solve the problem of moblie client  */
@@ -25,7 +25,7 @@ body {
   overflow-x: hidden;
 }
 h1, h2, h3, h4, h5, h6, .bold {
-  font-family: "Ubuntu-B", "Microsoft Yahei Bold";
+  font-family: "Ubuntu-B", "PingFangSC-Medium", "Microsoft Yahei Bold";
 }
 header, section, footer, aside, nav, main, article, figure {
   display: block;
@@ -517,13 +517,17 @@ img[src$="rocket.png"] {
   font-size: 15px;
 }
 .footer .content {
-  margin-left: -60px;
+  margin-left: 10px;
 }
 .footer-logo {
   display: none;
 }
 .footer-logo-mobile {
   display: block;
+  width: 55%;
+}
+.footer .column-1 {
+  width: 50%;
 }
 .footer .copyright {
   color: gray;
@@ -539,13 +543,16 @@ img[src$="rocket.png"] {
     padding: 12px 10px;
   }
   .footer .content {
-    margin-left: -20px;
+    margin-left: 2px;
   }
   .footer-logo {
     display: block;
   }
   .footer-logo-mobile {
     display: none;
+  }
+  .footer .column-1 {
+    width: 33.33%;
   }
 }
 @media only screen and (min-width: 500px) {
@@ -560,7 +567,7 @@ img[src$="rocket.png"] {
     font-size: large;
   }
   .footer .content {
-    margin-left: 0px;
+    margin-left: 5px;
   }
   .footer-logo {
     height: 67%;
